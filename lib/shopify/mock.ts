@@ -110,6 +110,516 @@ const mockProducts: ShopifyProduct[] = [
         seo: { title: 'Apple Mac Mini', description: 'Apple Mac Mini' },
         tags: ['Desktop', 'Mac'],
         updatedAt: new Date().toISOString()
+    },
+    {
+        id: 'gid://shopify/Product/3',
+        handle: 'mac-studio-m3-ultra-1',
+        availableForSale: true,
+        title: 'Mac Studio with M3 Ultra chip (1/10)',
+        description: '32-core CPU, 80-core GPU, 32-core Neural Engine. 512GB unified memory. 16TB SSD storage. Two Thunderbolt 5 ports, SDXC card slot. Four Thunderbolt 5 ports, two USB-A ports, HDMI port, 10Gb Ethernet port, 3.5mm headphone jack. Support for up to eight external displays. Accessory Kit. Software: Final Cut Pro License, Logic Pro License, Photos, iMovie, GarageBand, Pages, Numbers, Keynote, macOS. Next day delivery included.',
+        descriptionHtml: '<ul><li>32-core CPU, 80-core GPU, 32-core Neural Engine</li><li>512GB unified memory</li><li>16TB SSD storage</li><li>Two Thunderbolt 5 ports, SDXC card slot</li><li>Four Thunderbolt 5 ports, two USB-A ports, HDMI port, 10Gb Ethernet port, 3.5mm headphone jack</li><li>Support for up to eight external displays</li><li>Accessory Kit</li><li>Final Cut Pro License</li><li>Logic Pro License</li><li>Photos, iMovie, GarageBand</li><li>Pages, Numbers, Keynote</li><li>macOS</li><li>Next day delivery included</li></ul>',
+        options: [
+            { id: '1', name: 'Title', values: ['Default Title'] }
+        ],
+        priceRange: {
+            maxVariantPrice: { amount: '45000.0', currencyCode: 'USD' },
+            minVariantPrice: { amount: '45000.0', currencyCode: 'USD' }
+        },
+        variants: {
+            edges: [
+                {
+                    node: {
+                        id: 'gid://shopify/ProductVariant/3',
+                        title: 'Default Title',
+                        availableForSale: true,
+                        selectedOptions: [
+                            { name: 'Title', value: 'Default Title' }
+                        ],
+                        price: { amount: '45000.0', currencyCode: 'USD' }
+                    }
+                }
+            ]
+        },
+        featuredImage: {
+            url: '/images/mac-studio.png',
+            altText: 'Mac Studio with M3 Ultra chip',
+            width: 1024,
+            height: 1024
+        },
+        images: {
+            edges: [
+                {
+                    node: {
+                        url: '/images/mac-studio.png',
+                        altText: 'Mac Studio with M3 Ultra chip',
+                        width: 1024,
+                        height: 1024
+                    }
+                }
+            ]
+        },
+        seo: { title: 'Mac Studio with M3 Ultra chip', description: 'Mac Studio with M3 Ultra chip ($45000)' },
+        tags: ['Desktop', 'Mac', 'M3 Ultra'],
+        updatedAt: new Date().toISOString()
+    },
+    {
+        id: 'gid://shopify/Product/4',
+        handle: 'mac-studio-m3-ultra-2',
+        availableForSale: true,
+        title: 'Mac Studio with M3 Ultra chip (2/10)',
+        description: '32-core CPU, 80-core GPU, 32-core Neural Engine. 512GB unified memory. 16TB SSD storage. Two Thunderbolt 5 ports, SDXC card slot. Four Thunderbolt 5 ports, two USB-A ports, HDMI port, 10Gb Ethernet port, 3.5mm headphone jack. Support for up to eight external displays. Accessory Kit. Software: Final Cut Pro License, Logic Pro License, Photos, iMovie, GarageBand, Pages, Numbers, Keynote, macOS. Next day delivery included.',
+        descriptionHtml: '<ul><li>32-core CPU, 80-core GPU, 32-core Neural Engine</li><li>512GB unified memory</li><li>16TB SSD storage</li><li>Two Thunderbolt 5 ports, SDXC card slot</li><li>Four Thunderbolt 5 ports, two USB-A ports, HDMI port, 10Gb Ethernet port, 3.5mm headphone jack</li><li>Support for up to eight external displays</li><li>Accessory Kit</li><li>Final Cut Pro License</li><li>Logic Pro License</li><li>Photos, iMovie, GarageBand</li><li>Pages, Numbers, Keynote</li><li>macOS</li><li>Next day delivery included</li></ul>',
+        options: [
+            { id: '1', name: 'Title', values: ['Default Title'] }
+        ],
+        priceRange: {
+            maxVariantPrice: { amount: '45000.0', currencyCode: 'USD' },
+            minVariantPrice: { amount: '45000.0', currencyCode: 'USD' }
+        },
+        variants: {
+            edges: [
+                {
+                    node: {
+                        id: 'gid://shopify/ProductVariant/4',
+                        title: 'Default Title',
+                        availableForSale: true,
+                        selectedOptions: [
+                            { name: 'Title', value: 'Default Title' }
+                        ],
+                        price: { amount: '45000.0', currencyCode: 'USD' }
+                    }
+                }
+            ]
+        },
+        featuredImage: {
+            url: '/images/mac-studio.png',
+            altText: 'Mac Studio with M3 Ultra chip',
+            width: 1024,
+            height: 1024
+        },
+        images: {
+            edges: [
+                {
+                    node: {
+                        url: '/images/mac-studio.png',
+                        altText: 'Mac Studio with M3 Ultra chip',
+                        width: 1024,
+                        height: 1024
+                    }
+                }
+            ]
+        },
+        seo: { title: 'Mac Studio with M3 Ultra chip', description: 'Mac Studio with M3 Ultra chip ($45000)' },
+        tags: ['Desktop', 'Mac', 'M3 Ultra'],
+        updatedAt: new Date().toISOString()
+    },
+    {
+        id: 'gid://shopify/Product/5',
+        handle: 'mac-studio-m3-ultra-3',
+        availableForSale: true,
+        title: 'Mac Studio with M3 Ultra chip (3/10)',
+        description: '32-core CPU, 80-core GPU, 32-core Neural Engine. 512GB unified memory. 16TB SSD storage. Two Thunderbolt 5 ports, SDXC card slot. Four Thunderbolt 5 ports, two USB-A ports, HDMI port, 10Gb Ethernet port, 3.5mm headphone jack. Support for up to eight external displays. Accessory Kit. Software: Final Cut Pro License, Logic Pro License, Photos, iMovie, GarageBand, Pages, Numbers, Keynote, macOS. Next day delivery included.',
+        descriptionHtml: '<ul><li>32-core CPU, 80-core GPU, 32-core Neural Engine</li><li>512GB unified memory</li><li>16TB SSD storage</li><li>Two Thunderbolt 5 ports, SDXC card slot</li><li>Four Thunderbolt 5 ports, two USB-A ports, HDMI port, 10Gb Ethernet port, 3.5mm headphone jack</li><li>Support for up to eight external displays</li><li>Accessory Kit</li><li>Final Cut Pro License</li><li>Logic Pro License</li><li>Photos, iMovie, GarageBand</li><li>Pages, Numbers, Keynote</li><li>macOS</li><li>Next day delivery included</li></ul>',
+        options: [
+            { id: '1', name: 'Title', values: ['Default Title'] }
+        ],
+        priceRange: {
+            maxVariantPrice: { amount: '45000.0', currencyCode: 'USD' },
+            minVariantPrice: { amount: '45000.0', currencyCode: 'USD' }
+        },
+        variants: {
+            edges: [
+                {
+                    node: {
+                        id: 'gid://shopify/ProductVariant/5',
+                        title: 'Default Title',
+                        availableForSale: true,
+                        selectedOptions: [
+                            { name: 'Title', value: 'Default Title' }
+                        ],
+                        price: { amount: '45000.0', currencyCode: 'USD' }
+                    }
+                }
+            ]
+        },
+        featuredImage: {
+            url: '/images/mac-studio.png',
+            altText: 'Mac Studio with M3 Ultra chip',
+            width: 1024,
+            height: 1024
+        },
+        images: {
+            edges: [
+                {
+                    node: {
+                        url: '/images/mac-studio.png',
+                        altText: 'Mac Studio with M3 Ultra chip',
+                        width: 1024,
+                        height: 1024
+                    }
+                }
+            ]
+        },
+        seo: { title: 'Mac Studio with M3 Ultra chip', description: 'Mac Studio with M3 Ultra chip ($45000)' },
+        tags: ['Desktop', 'Mac', 'M3 Ultra'],
+        updatedAt: new Date().toISOString()
+    },
+    {
+        id: 'gid://shopify/Product/6',
+        handle: 'mac-studio-m3-ultra-4',
+        availableForSale: true,
+        title: 'Mac Studio with M3 Ultra chip (4/10)',
+        description: '32-core CPU, 80-core GPU, 32-core Neural Engine. 512GB unified memory. 16TB SSD storage. Two Thunderbolt 5 ports, SDXC card slot. Four Thunderbolt 5 ports, two USB-A ports, HDMI port, 10Gb Ethernet port, 3.5mm headphone jack. Support for up to eight external displays. Accessory Kit. Software: Final Cut Pro License, Logic Pro License, Photos, iMovie, GarageBand, Pages, Numbers, Keynote, macOS. Next day delivery included.',
+        descriptionHtml: '<ul><li>32-core CPU, 80-core GPU, 32-core Neural Engine</li><li>512GB unified memory</li><li>16TB SSD storage</li><li>Two Thunderbolt 5 ports, SDXC card slot</li><li>Four Thunderbolt 5 ports, two USB-A ports, HDMI port, 10Gb Ethernet port, 3.5mm headphone jack</li><li>Support for up to eight external displays</li><li>Accessory Kit</li><li>Final Cut Pro License</li><li>Logic Pro License</li><li>Photos, iMovie, GarageBand</li><li>Pages, Numbers, Keynote</li><li>macOS</li><li>Next day delivery included</li></ul>',
+        options: [
+            { id: '1', name: 'Title', values: ['Default Title'] }
+        ],
+        priceRange: {
+            maxVariantPrice: { amount: '45000.0', currencyCode: 'USD' },
+            minVariantPrice: { amount: '45000.0', currencyCode: 'USD' }
+        },
+        variants: {
+            edges: [
+                {
+                    node: {
+                        id: 'gid://shopify/ProductVariant/6',
+                        title: 'Default Title',
+                        availableForSale: true,
+                        selectedOptions: [
+                            { name: 'Title', value: 'Default Title' }
+                        ],
+                        price: { amount: '45000.0', currencyCode: 'USD' }
+                    }
+                }
+            ]
+        },
+        featuredImage: {
+            url: '/images/mac-studio.png',
+            altText: 'Mac Studio with M3 Ultra chip',
+            width: 1024,
+            height: 1024
+        },
+        images: {
+            edges: [
+                {
+                    node: {
+                        url: '/images/mac-studio.png',
+                        altText: 'Mac Studio with M3 Ultra chip',
+                        width: 1024,
+                        height: 1024
+                    }
+                }
+            ]
+        },
+        seo: { title: 'Mac Studio with M3 Ultra chip', description: 'Mac Studio with M3 Ultra chip ($45000)' },
+        tags: ['Desktop', 'Mac', 'M3 Ultra'],
+        updatedAt: new Date().toISOString()
+    },
+    {
+        id: 'gid://shopify/Product/7',
+        handle: 'mac-studio-m3-ultra-5',
+        availableForSale: true,
+        title: 'Mac Studio with M3 Ultra chip (5/10)',
+        description: '32-core CPU, 80-core GPU, 32-core Neural Engine. 512GB unified memory. 16TB SSD storage. Two Thunderbolt 5 ports, SDXC card slot. Four Thunderbolt 5 ports, two USB-A ports, HDMI port, 10Gb Ethernet port, 3.5mm headphone jack. Support for up to eight external displays. Accessory Kit. Software: Final Cut Pro License, Logic Pro License, Photos, iMovie, GarageBand, Pages, Numbers, Keynote, macOS. Next day delivery included.',
+        descriptionHtml: '<ul><li>32-core CPU, 80-core GPU, 32-core Neural Engine</li><li>512GB unified memory</li><li>16TB SSD storage</li><li>Two Thunderbolt 5 ports, SDXC card slot</li><li>Four Thunderbolt 5 ports, two USB-A ports, HDMI port, 10Gb Ethernet port, 3.5mm headphone jack</li><li>Support for up to eight external displays</li><li>Accessory Kit</li><li>Final Cut Pro License</li><li>Logic Pro License</li><li>Photos, iMovie, GarageBand</li><li>Pages, Numbers, Keynote</li><li>macOS</li><li>Next day delivery included</li></ul>',
+        options: [
+            { id: '1', name: 'Title', values: ['Default Title'] }
+        ],
+        priceRange: {
+            maxVariantPrice: { amount: '45000.0', currencyCode: 'USD' },
+            minVariantPrice: { amount: '45000.0', currencyCode: 'USD' }
+        },
+        variants: {
+            edges: [
+                {
+                    node: {
+                        id: 'gid://shopify/ProductVariant/7',
+                        title: 'Default Title',
+                        availableForSale: true,
+                        selectedOptions: [
+                            { name: 'Title', value: 'Default Title' }
+                        ],
+                        price: { amount: '45000.0', currencyCode: 'USD' }
+                    }
+                }
+            ]
+        },
+        featuredImage: {
+            url: '/images/mac-studio.png',
+            altText: 'Mac Studio with M3 Ultra chip',
+            width: 1024,
+            height: 1024
+        },
+        images: {
+            edges: [
+                {
+                    node: {
+                        url: '/images/mac-studio.png',
+                        altText: 'Mac Studio with M3 Ultra chip',
+                        width: 1024,
+                        height: 1024
+                    }
+                }
+            ]
+        },
+        seo: { title: 'Mac Studio with M3 Ultra chip', description: 'Mac Studio with M3 Ultra chip ($45000)' },
+        tags: ['Desktop', 'Mac', 'M3 Ultra'],
+        updatedAt: new Date().toISOString()
+    },
+    {
+        id: 'gid://shopify/Product/8',
+        handle: 'mac-studio-m3-ultra-6',
+        availableForSale: true,
+        title: 'Mac Studio with M3 Ultra chip (6/10)',
+        description: '32-core CPU, 80-core GPU, 32-core Neural Engine. 512GB unified memory. 16TB SSD storage. Two Thunderbolt 5 ports, SDXC card slot. Four Thunderbolt 5 ports, two USB-A ports, HDMI port, 10Gb Ethernet port, 3.5mm headphone jack. Support for up to eight external displays. Accessory Kit. Software: Final Cut Pro License, Logic Pro License, Photos, iMovie, GarageBand, Pages, Numbers, Keynote, macOS. Next day delivery included.',
+        descriptionHtml: '<ul><li>32-core CPU, 80-core GPU, 32-core Neural Engine</li><li>512GB unified memory</li><li>16TB SSD storage</li><li>Two Thunderbolt 5 ports, SDXC card slot</li><li>Four Thunderbolt 5 ports, two USB-A ports, HDMI port, 10Gb Ethernet port, 3.5mm headphone jack</li><li>Support for up to eight external displays</li><li>Accessory Kit</li><li>Final Cut Pro License</li><li>Logic Pro License</li><li>Photos, iMovie, GarageBand</li><li>Pages, Numbers, Keynote</li><li>macOS</li><li>Next day delivery included</li></ul>',
+        options: [
+            { id: '1', name: 'Title', values: ['Default Title'] }
+        ],
+        priceRange: {
+            maxVariantPrice: { amount: '45000.0', currencyCode: 'USD' },
+            minVariantPrice: { amount: '45000.0', currencyCode: 'USD' }
+        },
+        variants: {
+            edges: [
+                {
+                    node: {
+                        id: 'gid://shopify/ProductVariant/8',
+                        title: 'Default Title',
+                        availableForSale: true,
+                        selectedOptions: [
+                            { name: 'Title', value: 'Default Title' }
+                        ],
+                        price: { amount: '45000.0', currencyCode: 'USD' }
+                    }
+                }
+            ]
+        },
+        featuredImage: {
+            url: '/images/mac-studio.png',
+            altText: 'Mac Studio with M3 Ultra chip',
+            width: 1024,
+            height: 1024
+        },
+        images: {
+            edges: [
+                {
+                    node: {
+                        url: '/images/mac-studio.png',
+                        altText: 'Mac Studio with M3 Ultra chip',
+                        width: 1024,
+                        height: 1024
+                    }
+                }
+            ]
+        },
+        seo: { title: 'Mac Studio with M3 Ultra chip', description: 'Mac Studio with M3 Ultra chip ($45000)' },
+        tags: ['Desktop', 'Mac', 'M3 Ultra'],
+        updatedAt: new Date().toISOString()
+    },
+    {
+        id: 'gid://shopify/Product/9',
+        handle: 'mac-studio-m3-ultra-7',
+        availableForSale: true,
+        title: 'Mac Studio with M3 Ultra chip (7/10)',
+        description: '32-core CPU, 80-core GPU, 32-core Neural Engine. 512GB unified memory. 16TB SSD storage. Two Thunderbolt 5 ports, SDXC card slot. Four Thunderbolt 5 ports, two USB-A ports, HDMI port, 10Gb Ethernet port, 3.5mm headphone jack. Support for up to eight external displays. Accessory Kit. Software: Final Cut Pro License, Logic Pro License, Photos, iMovie, GarageBand, Pages, Numbers, Keynote, macOS. Next day delivery included.',
+        descriptionHtml: '<ul><li>32-core CPU, 80-core GPU, 32-core Neural Engine</li><li>512GB unified memory</li><li>16TB SSD storage</li><li>Two Thunderbolt 5 ports, SDXC card slot</li><li>Four Thunderbolt 5 ports, two USB-A ports, HDMI port, 10Gb Ethernet port, 3.5mm headphone jack</li><li>Support for up to eight external displays</li><li>Accessory Kit</li><li>Final Cut Pro License</li><li>Logic Pro License</li><li>Photos, iMovie, GarageBand</li><li>Pages, Numbers, Keynote</li><li>macOS</li><li>Next day delivery included</li></ul>',
+        options: [
+            { id: '1', name: 'Title', values: ['Default Title'] }
+        ],
+        priceRange: {
+            maxVariantPrice: { amount: '45000.0', currencyCode: 'USD' },
+            minVariantPrice: { amount: '45000.0', currencyCode: 'USD' }
+        },
+        variants: {
+            edges: [
+                {
+                    node: {
+                        id: 'gid://shopify/ProductVariant/9',
+                        title: 'Default Title',
+                        availableForSale: true,
+                        selectedOptions: [
+                            { name: 'Title', value: 'Default Title' }
+                        ],
+                        price: { amount: '45000.0', currencyCode: 'USD' }
+                    }
+                }
+            ]
+        },
+        featuredImage: {
+            url: '/images/mac-studio.png',
+            altText: 'Mac Studio with M3 Ultra chip',
+            width: 1024,
+            height: 1024
+        },
+        images: {
+            edges: [
+                {
+                    node: {
+                        url: '/images/mac-studio.png',
+                        altText: 'Mac Studio with M3 Ultra chip',
+                        width: 1024,
+                        height: 1024
+                    }
+                }
+            ]
+        },
+        seo: { title: 'Mac Studio with M3 Ultra chip', description: 'Mac Studio with M3 Ultra chip ($45000)' },
+        tags: ['Desktop', 'Mac', 'M3 Ultra'],
+        updatedAt: new Date().toISOString()
+    },
+    {
+        id: 'gid://shopify/Product/10',
+        handle: 'mac-studio-m3-ultra-8',
+        availableForSale: true,
+        title: 'Mac Studio with M3 Ultra chip (8/10)',
+        description: '32-core CPU, 80-core GPU, 32-core Neural Engine. 512GB unified memory. 16TB SSD storage. Two Thunderbolt 5 ports, SDXC card slot. Four Thunderbolt 5 ports, two USB-A ports, HDMI port, 10Gb Ethernet port, 3.5mm headphone jack. Support for up to eight external displays. Accessory Kit. Software: Final Cut Pro License, Logic Pro License, Photos, iMovie, GarageBand, Pages, Numbers, Keynote, macOS. Next day delivery included.',
+        descriptionHtml: '<ul><li>32-core CPU, 80-core GPU, 32-core Neural Engine</li><li>512GB unified memory</li><li>16TB SSD storage</li><li>Two Thunderbolt 5 ports, SDXC card slot</li><li>Four Thunderbolt 5 ports, two USB-A ports, HDMI port, 10Gb Ethernet port, 3.5mm headphone jack</li><li>Support for up to eight external displays</li><li>Accessory Kit</li><li>Final Cut Pro License</li><li>Logic Pro License</li><li>Photos, iMovie, GarageBand</li><li>Pages, Numbers, Keynote</li><li>macOS</li><li>Next day delivery included</li></ul>',
+        options: [
+            { id: '1', name: 'Title', values: ['Default Title'] }
+        ],
+        priceRange: {
+            maxVariantPrice: { amount: '45000.0', currencyCode: 'USD' },
+            minVariantPrice: { amount: '45000.0', currencyCode: 'USD' }
+        },
+        variants: {
+            edges: [
+                {
+                    node: {
+                        id: 'gid://shopify/ProductVariant/10',
+                        title: 'Default Title',
+                        availableForSale: true,
+                        selectedOptions: [
+                            { name: 'Title', value: 'Default Title' }
+                        ],
+                        price: { amount: '45000.0', currencyCode: 'USD' }
+                    }
+                }
+            ]
+        },
+        featuredImage: {
+            url: '/images/mac-studio.png',
+            altText: 'Mac Studio with M3 Ultra chip',
+            width: 1024,
+            height: 1024
+        },
+        images: {
+            edges: [
+                {
+                    node: {
+                        url: '/images/mac-studio.png',
+                        altText: 'Mac Studio with M3 Ultra chip',
+                        width: 1024,
+                        height: 1024
+                    }
+                }
+            ]
+        },
+        seo: { title: 'Mac Studio with M3 Ultra chip', description: 'Mac Studio with M3 Ultra chip ($45000)' },
+        tags: ['Desktop', 'Mac', 'M3 Ultra'],
+        updatedAt: new Date().toISOString()
+    },
+    {
+        id: 'gid://shopify/Product/11',
+        handle: 'mac-studio-m3-ultra-9',
+        availableForSale: true,
+        title: 'Mac Studio with M3 Ultra chip (9/10)',
+        description: '32-core CPU, 80-core GPU, 32-core Neural Engine. 512GB unified memory. 16TB SSD storage. Two Thunderbolt 5 ports, SDXC card slot. Four Thunderbolt 5 ports, two USB-A ports, HDMI port, 10Gb Ethernet port, 3.5mm headphone jack. Support for up to eight external displays. Accessory Kit. Software: Final Cut Pro License, Logic Pro License, Photos, iMovie, GarageBand, Pages, Numbers, Keynote, macOS. Next day delivery included.',
+        descriptionHtml: '<ul><li>32-core CPU, 80-core GPU, 32-core Neural Engine</li><li>512GB unified memory</li><li>16TB SSD storage</li><li>Two Thunderbolt 5 ports, SDXC card slot</li><li>Four Thunderbolt 5 ports, two USB-A ports, HDMI port, 10Gb Ethernet port, 3.5mm headphone jack</li><li>Support for up to eight external displays</li><li>Accessory Kit</li><li>Final Cut Pro License</li><li>Logic Pro License</li><li>Photos, iMovie, GarageBand</li><li>Pages, Numbers, Keynote</li><li>macOS</li><li>Next day delivery included</li></ul>',
+        options: [
+            { id: '1', name: 'Title', values: ['Default Title'] }
+        ],
+        priceRange: {
+            maxVariantPrice: { amount: '45000.0', currencyCode: 'USD' },
+            minVariantPrice: { amount: '45000.0', currencyCode: 'USD' }
+        },
+        variants: {
+            edges: [
+                {
+                    node: {
+                        id: 'gid://shopify/ProductVariant/11',
+                        title: 'Default Title',
+                        availableForSale: true,
+                        selectedOptions: [
+                            { name: 'Title', value: 'Default Title' }
+                        ],
+                        price: { amount: '45000.0', currencyCode: 'USD' }
+                    }
+                }
+            ]
+        },
+        featuredImage: {
+            url: '/images/mac-studio.png',
+            altText: 'Mac Studio with M3 Ultra chip',
+            width: 1024,
+            height: 1024
+        },
+        images: {
+            edges: [
+                {
+                    node: {
+                        url: '/images/mac-studio.png',
+                        altText: 'Mac Studio with M3 Ultra chip',
+                        width: 1024,
+                        height: 1024
+                    }
+                }
+            ]
+        },
+        seo: { title: 'Mac Studio with M3 Ultra chip', description: 'Mac Studio with M3 Ultra chip ($45000)' },
+        tags: ['Desktop', 'Mac', 'M3 Ultra'],
+        updatedAt: new Date().toISOString()
+    },
+    {
+        id: 'gid://shopify/Product/12',
+        handle: 'mac-studio-m3-ultra-10',
+        availableForSale: true,
+        title: 'Mac Studio with M3 Ultra chip (10/10)',
+        description: '32-core CPU, 80-core GPU, 32-core Neural Engine. 512GB unified memory. 16TB SSD storage. Two Thunderbolt 5 ports, SDXC card slot. Four Thunderbolt 5 ports, two USB-A ports, HDMI port, 10Gb Ethernet port, 3.5mm headphone jack. Support for up to eight external displays. Accessory Kit. Software: Final Cut Pro License, Logic Pro License, Photos, iMovie, GarageBand, Pages, Numbers, Keynote, macOS. Next day delivery included.',
+        descriptionHtml: '<ul><li>32-core CPU, 80-core GPU, 32-core Neural Engine</li><li>512GB unified memory</li><li>16TB SSD storage</li><li>Two Thunderbolt 5 ports, SDXC card slot</li><li>Four Thunderbolt 5 ports, two USB-A ports, HDMI port, 10Gb Ethernet port, 3.5mm headphone jack</li><li>Support for up to eight external displays</li><li>Accessory Kit</li><li>Final Cut Pro License</li><li>Logic Pro License</li><li>Photos, iMovie, GarageBand</li><li>Pages, Numbers, Keynote</li><li>macOS</li><li>Next day delivery included</li></ul>',
+        options: [
+            { id: '1', name: 'Title', values: ['Default Title'] }
+        ],
+        priceRange: {
+            maxVariantPrice: { amount: '45000.0', currencyCode: 'USD' },
+            minVariantPrice: { amount: '45000.0', currencyCode: 'USD' }
+        },
+        variants: {
+            edges: [
+                {
+                    node: {
+                        id: 'gid://shopify/ProductVariant/12',
+                        title: 'Default Title',
+                        availableForSale: true,
+                        selectedOptions: [
+                            { name: 'Title', value: 'Default Title' }
+                        ],
+                        price: { amount: '45000.0', currencyCode: 'USD' }
+                    }
+                }
+            ]
+        },
+        featuredImage: {
+            url: '/images/mac-studio.png',
+            altText: 'Mac Studio with M3 Ultra chip',
+            width: 1024,
+            height: 1024
+        },
+        images: {
+            edges: [
+                {
+                    node: {
+                        url: '/images/mac-studio.png',
+                        altText: 'Mac Studio with M3 Ultra chip',
+                        width: 1024,
+                        height: 1024
+                    }
+                }
+            ]
+        },
+        seo: { title: 'Mac Studio with M3 Ultra chip', description: 'Mac Studio with M3 Ultra chip ($45000)' },
+        tags: ['Desktop', 'Mac', 'M3 Ultra'],
+        updatedAt: new Date().toISOString()
     }
 ];
 
