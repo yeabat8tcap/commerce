@@ -12,6 +12,7 @@ import {
 } from "next/cache";
 import { cookies, headers } from "next/headers";
 import { NextRequest, NextResponse } from "next/server";
+import { mockShopifyFetch } from "./mock";
 import {
   addToCartMutation,
   createCartMutation,
@@ -77,6 +78,10 @@ export async function shopifyFetch<T>({
   query: string;
   variables?: ExtractVariables<T>;
 }): Promise<{ status: number; body: T } | never> {
+  if (process.env.SHOPIFY_MOCK === "true") {
+    return mockShopifyFetch<T>({ query, variables });
+  }
+
   try {
     if (!endpoint) {
       throw new Error("SHOPIFY_STORE_DOMAIN environment variable is not set");
