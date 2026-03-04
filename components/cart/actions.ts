@@ -7,8 +7,8 @@ import {
   getCart,
   removeFromCart,
   updateCart,
-} from "lib/shopify";
-import { updateTag } from "next/cache";
+} from 'lib/local';
+import { revalidateTag } from "next/cache";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 
@@ -16,13 +16,22 @@ export async function addItem(
   prevState: any,
   selectedVariantId: string | undefined
 ) {
+  let cartId = (await cookies()).get('cartId')?.value;
+
+  if (!cartId) {
+    cartId = (await createCart()).id;
+    if (cartId) {
+      (await cookies()).set('cartId', cartId);
+    }
+  }
+
   if (!selectedVariantId) {
-    return "Error adding item to cart";
+    return 'Error adding item to cart';
   }
 
   try {
     await addToCart([{ merchandiseId: selectedVariantId, quantity: 1 }]);
-    updateTag(TAGS.cart);
+    revalidateTag(TAGS.cart, 'days');
   } catch (e) {
     return "Error adding item to cart";
   }
@@ -42,7 +51,7 @@ export async function removeItem(prevState: any, merchandiseId: string) {
 
     if (lineItem && lineItem.id) {
       await removeFromCart([lineItem.id]);
-      updateTag(TAGS.cart);
+      revalidateTag(TAGS.cart, 'days');
     } else {
       return "Item not found in cart";
     }
@@ -88,7 +97,7 @@ export async function updateItemQuantity(
       await addToCart([{ merchandiseId, quantity }]);
     }
 
-    updateTag(TAGS.cart);
+    revalidateTag(TAGS.cart, 'days');
   } catch (e) {
     console.error(e);
     return "Error updating item quantity";
@@ -97,7 +106,33 @@ export async function updateItemQuantity(
 
 export async function redirectToCheckout() {
   let cart = await getCart();
-  redirect(cart!.checkoutUrl);
+  if (!cart) {
+    return "Error getting cart";
+  }
+
+  try {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3005'}/api/checkout`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ cartId: cart.id }),
+    });
+
+    if (!res.ok) {
+      const e = await res.json();
+      console.error(e);
+      return "Error initializing checkout";
+    }
+
+    const { url } = await res.json();
+    if (url) {
+      redirect(url);
+    }
+  } catch (error) {
+    console.error('Checkout error:', error);
+    return "Error initializing checkout";
+  }
 }
 
 export async function createCartAndSetCookie() {

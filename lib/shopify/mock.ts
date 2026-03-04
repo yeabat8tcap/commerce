@@ -680,6 +680,10 @@ export async function mockShopifyFetch<T>({
                 edges: mockCollections.map((c) => ({ node: c }))
             }
         };
+    } else if (query.includes('query getCollection(')) {
+        data = {
+            collection: mockCollections.find((c) => c.handle === variables?.handle) || null
+        };
     } else if (query.includes('query getCollectionProducts')) {
         data = {
             collection: {

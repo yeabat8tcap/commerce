@@ -1,0 +1,67 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Product {
+  id               String   @id @default(uuid())
+  handle           String   @unique
+  availableForSale Boolean  @default(true)
+  title            String
+  description      String
+  descriptionHtml  String
+  options          String   // JSON string
+  priceRangeMin    Decimal
+  priceRangeMax    Decimal
+  featuredImage    String   // JSON string
+  images           String   // JSON string
+  seo              String   // JSON string
+  tags             String   // JSON string
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+
+  variants         ProductVariant[]
+}
+
+model ProductVariant {
+  id               String   @id @default(uuid())
+  title            String
+  availableForSale Boolean  @default(true)
+  selectedOptions  String   // JSON string
+  price            Decimal
+  inventory        Int      @default(0)
+
+  productId        String
+  product          Product  @relation(fields: [productId], references: [id], onDelete: Cascade)
+
+  cartLines        CartLine[]
+}
+
+model Cart {
+  id             String     @id @default(uuid())
+  checkoutUrl    String
+  subtotalAmount Decimal    @default(0)
+  totalAmount    Decimal    @default(0)
+  totalTaxAmount Decimal    @default(0)
+  totalQuantity  Int        @default(0)
+  createdAt      DateTime   @default(now())
+  updatedAt      DateTime   @updatedAt
+
+  lines          CartLine[]
+}
+
+model CartLine {
+  id            String   @id @default(uuid())
+  quantity      Int
+  costAmount    Decimal
+
+  merchandiseId String
+  merchandise   ProductVariant @relation(fields: [merchandiseId], references: [id])
+
+  cartId        String
+  cart          Cart           @relation(fields: [cartId], references: [id], onDelete: Cascade)
+}

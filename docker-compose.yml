@@ -6,9 +6,10 @@ services:
     container_name: cephal-commerce
     restart: always
     ports:
-      - "3000:3000"
+      - "3005:3000"
     env_file:
       - .env
+      - .env.local
     environment:
       - PORT=3000
       - HOSTNAME=0.0.0.0

@@ -1,6 +1,6 @@
 import { AddToCart } from 'components/cart/add-to-cart';
 import Price from 'components/price';
-import { Product } from 'lib/shopify/types';
+import { Product } from 'lib/local/types';
 import Image from 'next/image';
 
 export function MacStudioConfigurator({ product }: { product: Product }) {
@@ -101,17 +101,6 @@ export function MacStudioConfigurator({ product }: { product: Product }) {
                                     <div className="text-sm mt-1">Free Shipping</div>
                                 </div>
                             </div>
-
-                            <div className="flex items-start gap-3 border-t border-gray-200 dark:border-neutral-800 pt-4">
-                                <svg className="w-6 h-6 text-gray-700 dark:text-gray-300 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
-                                </svg>
-                                <div>
-                                    <div className="font-semibold mb-1">Pick up, in store:</div>
-                                    <div className="text-gray-600 dark:text-gray-400">Tue, May 26 at Apple Southpoint</div>
-                                    <button className="text-blue-600 hover:underline text-sm mt-1">Check another store</button>
-                                </div>
-                            </div>
                         </div>
 
                         {/* Pricing Sticky Bottom Area */}
@@ -121,7 +110,6 @@ export function MacStudioConfigurator({ product }: { product: Product }) {
                                     <Price amount={product.priceRange.maxVariantPrice.amount} currencyCode={product.priceRange.maxVariantPrice.currencyCode} />
                                 </div>
                                 <div className="text-sm text-gray-500">One-time payment</div>
-                                <div className="text-sm mt-2">Get 3% Daily Cash with Apple Card.</div>
                             </div>
 
                             <div className="w-full">

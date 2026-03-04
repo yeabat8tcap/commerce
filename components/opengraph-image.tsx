@@ -26,7 +26,11 @@ export default async function OpengraphImage(
         <div tw="flex flex-none items-center justify-center border border-neutral-700 h-[160px] w-[160px] rounded-3xl">
           <LogoIcon width="64" height="58" src={process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}/logo.png` : "http://localhost:3005/logo.png"} />
         </div>
-        <p tw="mt-12 text-6xl font-bold text-white">{title}</p>
+        <div tw="mt-12 flex items-center justify-center">
+          <p tw="text-6xl font-bold text-white uppercase">{title}</p>
+          <p tw="ml-4 text-3xl text-neutral-400 font-normal lowercase">by</p>
+          <p tw="ml-4 text-6xl font-bold text-white uppercase">Cephal LLC</p>
+        </div>
       </div>
     ),
     {

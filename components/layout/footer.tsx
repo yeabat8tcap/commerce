@@ -2,7 +2,7 @@ import Link from "next/link";
 
 import FooterMenu from "components/layout/footer-menu";
 import LogoSquare from "components/logo-square";
-import { getMenu } from "lib/shopify";
+import { getMenu } from 'lib/local';
 import { Suspense } from "react";
 
 const { COMPANY_NAME, SITE_NAME } = process.env;
@@ -13,7 +13,7 @@ export default async function Footer() {
   const skeleton =
     "w-full h-6 animate-pulse rounded-sm bg-neutral-200 dark:bg-neutral-700";
   const menu = await getMenu("next-js-frontend-footer-menu");
-  const copyrightName = COMPANY_NAME || SITE_NAME || "";
+  const copyrightName = COMPANY_NAME || "Cephal LLC" || SITE_NAME || "";
 
   return (
     <footer className="text-sm text-neutral-500 dark:text-neutral-400">
@@ -24,7 +24,11 @@ export default async function Footer() {
             href="/"
           >
             <LogoSquare size="sm" />
-            <span className="uppercase">{SITE_NAME}</span>
+            <div className="uppercase">
+              <span>{SITE_NAME}</span>
+              <span className="ml-1 text-xs text-neutral-500 lowercase dark:text-neutral-400 font-normal">by</span>
+              <span className="ml-1">Cephal LLC</span>
+            </div>
           </Link>
         </div>
         <Suspense
