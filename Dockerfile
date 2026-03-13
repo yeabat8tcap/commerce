@@ -20,9 +20,12 @@ COPY . .
 ENV NEXT_TELEMETRY_DISABLED=1
 ENV SHOPIFY_MOCK=true
 ENV SITE_NAME="Cephal Commerce"
+ENV DATABASE_URL="file:./dev.db"
 
 RUN npm install -g pnpm
 RUN npx prisma generate
+RUN npx prisma db push
+RUN npx tsx scripts/seed.ts
 RUN pnpm build
 
 # Stage 3: Runner
@@ -40,7 +43,6 @@ COPY --from=builder /app/public ./public
 COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
 COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
 COPY --from=builder --chown=nextjs:nodejs /app/prisma ./prisma
-COPY --from=builder --chown=nextjs:nodejs /app/dev.db ./dev.db
 
 USER nextjs
 

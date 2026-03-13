@@ -122,8 +122,8 @@ const mockProducts: ShopifyProduct[] = [
             { id: '1', name: 'Title', values: ['Default Title'] }
         ],
         priceRange: {
-            maxVariantPrice: { amount: '45000.0', currencyCode: 'USD' },
-            minVariantPrice: { amount: '45000.0', currencyCode: 'USD' }
+            maxVariantPrice: { amount: '63000.0', currencyCode: 'USD' },
+            minVariantPrice: { amount: '63000.0', currencyCode: 'USD' }
         },
         variants: {
             edges: [
@@ -135,7 +135,7 @@ const mockProducts: ShopifyProduct[] = [
                         selectedOptions: [
                             { name: 'Title', value: 'Default Title' }
                         ],
-                        price: { amount: '45000.0', currencyCode: 'USD' }
+                        price: { amount: '63000.0', currencyCode: 'USD' }
                     }
                 }
             ]
@@ -158,7 +158,7 @@ const mockProducts: ShopifyProduct[] = [
                 }
             ]
         },
-        seo: { title: 'Mac Studio with M3 Ultra chip', description: 'Mac Studio with M3 Ultra chip ($45000)' },
+        seo: { title: 'Mac Studio with M3 Ultra chip', description: 'Mac Studio with M3 Ultra chip ($63000)' },
         tags: ['Desktop', 'Mac', 'M3 Ultra'],
         updatedAt: new Date().toISOString()
     },
@@ -173,8 +173,8 @@ const mockProducts: ShopifyProduct[] = [
             { id: '1', name: 'Title', values: ['Default Title'] }
         ],
         priceRange: {
-            maxVariantPrice: { amount: '45000.0', currencyCode: 'USD' },
-            minVariantPrice: { amount: '45000.0', currencyCode: 'USD' }
+            maxVariantPrice: { amount: '63000.0', currencyCode: 'USD' },
+            minVariantPrice: { amount: '63000.0', currencyCode: 'USD' }
         },
         variants: {
             edges: [
@@ -186,7 +186,7 @@ const mockProducts: ShopifyProduct[] = [
                         selectedOptions: [
                             { name: 'Title', value: 'Default Title' }
                         ],
-                        price: { amount: '45000.0', currencyCode: 'USD' }
+                        price: { amount: '63000.0', currencyCode: 'USD' }
                     }
                 }
             ]
@@ -209,7 +209,7 @@ const mockProducts: ShopifyProduct[] = [
                 }
             ]
         },
-        seo: { title: 'Mac Studio with M3 Ultra chip', description: 'Mac Studio with M3 Ultra chip ($45000)' },
+        seo: { title: 'Mac Studio with M3 Ultra chip', description: 'Mac Studio with M3 Ultra chip ($63000)' },
         tags: ['Desktop', 'Mac', 'M3 Ultra'],
         updatedAt: new Date().toISOString()
     },
@@ -224,8 +224,8 @@ const mockProducts: ShopifyProduct[] = [
             { id: '1', name: 'Title', values: ['Default Title'] }
         ],
         priceRange: {
-            maxVariantPrice: { amount: '45000.0', currencyCode: 'USD' },
-            minVariantPrice: { amount: '45000.0', currencyCode: 'USD' }
+            maxVariantPrice: { amount: '63000.0', currencyCode: 'USD' },
+            minVariantPrice: { amount: '63000.0', currencyCode: 'USD' }
         },
         variants: {
             edges: [
@@ -237,7 +237,7 @@ const mockProducts: ShopifyProduct[] = [
                         selectedOptions: [
                             { name: 'Title', value: 'Default Title' }
                         ],
-                        price: { amount: '45000.0', currencyCode: 'USD' }
+                        price: { amount: '63000.0', currencyCode: 'USD' }
                     }
                 }
             ]
@@ -260,7 +260,7 @@ const mockProducts: ShopifyProduct[] = [
                 }
             ]
         },
-        seo: { title: 'Mac Studio with M3 Ultra chip', description: 'Mac Studio with M3 Ultra chip ($45000)' },
+        seo: { title: 'Mac Studio with M3 Ultra chip', description: 'Mac Studio with M3 Ultra chip ($63000)' },
         tags: ['Desktop', 'Mac', 'M3 Ultra'],
         updatedAt: new Date().toISOString()
     },
@@ -275,8 +275,8 @@ const mockProducts: ShopifyProduct[] = [
             { id: '1', name: 'Title', values: ['Default Title'] }
         ],
         priceRange: {
-            maxVariantPrice: { amount: '45000.0', currencyCode: 'USD' },
-            minVariantPrice: { amount: '45000.0', currencyCode: 'USD' }
+            maxVariantPrice: { amount: '63000.0', currencyCode: 'USD' },
+            minVariantPrice: { amount: '63000.0', currencyCode: 'USD' }
         },
         variants: {
             edges: [
@@ -288,7 +288,7 @@ const mockProducts: ShopifyProduct[] = [
                         selectedOptions: [
                             { name: 'Title', value: 'Default Title' }
                         ],
-                        price: { amount: '45000.0', currencyCode: 'USD' }
+                        price: { amount: '63000.0', currencyCode: 'USD' }
                     }
                 }
             ]
@@ -311,7 +311,7 @@ const mockProducts: ShopifyProduct[] = [
                 }
             ]
         },
-        seo: { title: 'Mac Studio with M3 Ultra chip', description: 'Mac Studio with M3 Ultra chip ($45000)' },
+        seo: { title: 'Mac Studio with M3 Ultra chip', description: 'Mac Studio with M3 Ultra chip ($63000)' },
         tags: ['Desktop', 'Mac', 'M3 Ultra'],
         updatedAt: new Date().toISOString()
     },
@@ -326,8 +326,8 @@ const mockProducts: ShopifyProduct[] = [
             { id: '1', name: 'Title', values: ['Default Title'] }
         ],
         priceRange: {
-            maxVariantPrice: { amount: '45000.0', currencyCode: 'USD' },
-            minVariantPrice: { amount: '45000.0', currencyCode: 'USD' }
+            maxVariantPrice: { amount: '63000.0', currencyCode: 'USD' },
+            minVariantPrice: { amount: '63000.0', currencyCode: 'USD' }
         },
         variants: {
             edges: [
@@ -339,7 +339,7 @@ const mockProducts: ShopifyProduct[] = [
                         selectedOptions: [
                             { name: 'Title', value: 'Default Title' }
                         ],
-                        price: { amount: '45000.0', currencyCode: 'USD' }
+                        price: { amount: '63000.0', currencyCode: 'USD' }
                     }
                 }
             ]
@@ -362,7 +362,7 @@ const mockProducts: ShopifyProduct[] = [
                 }
             ]
         },
-        seo: { title: 'Mac Studio with M3 Ultra chip', description: 'Mac Studio with M3 Ultra chip ($45000)' },
+        seo: { title: 'Mac Studio with M3 Ultra chip', description: 'Mac Studio with M3 Ultra chip ($63000)' },
         tags: ['Desktop', 'Mac', 'M3 Ultra'],
         updatedAt: new Date().toISOString()
     },
@@ -377,8 +377,8 @@ const mockProducts: ShopifyProduct[] = [
             { id: '1', name: 'Title', values: ['Default Title'] }
         ],
         priceRange: {
-            maxVariantPrice: { amount: '45000.0', currencyCode: 'USD' },
-            minVariantPrice: { amount: '45000.0', currencyCode: 'USD' }
+            maxVariantPrice: { amount: '63000.0', currencyCode: 'USD' },
+            minVariantPrice: { amount: '63000.0', currencyCode: 'USD' }
         },
         variants: {
             edges: [
@@ -390,7 +390,7 @@ const mockProducts: ShopifyProduct[] = [
                         selectedOptions: [
                             { name: 'Title', value: 'Default Title' }
                         ],
-                        price: { amount: '45000.0', currencyCode: 'USD' }
+                        price: { amount: '63000.0', currencyCode: 'USD' }
                     }
                 }
             ]
@@ -413,7 +413,7 @@ const mockProducts: ShopifyProduct[] = [
                 }
             ]
         },
-        seo: { title: 'Mac Studio with M3 Ultra chip', description: 'Mac Studio with M3 Ultra chip ($45000)' },
+        seo: { title: 'Mac Studio with M3 Ultra chip', description: 'Mac Studio with M3 Ultra chip ($63000)' },
         tags: ['Desktop', 'Mac', 'M3 Ultra'],
         updatedAt: new Date().toISOString()
     },
@@ -428,8 +428,8 @@ const mockProducts: ShopifyProduct[] = [
             { id: '1', name: 'Title', values: ['Default Title'] }
         ],
         priceRange: {
-            maxVariantPrice: { amount: '45000.0', currencyCode: 'USD' },
-            minVariantPrice: { amount: '45000.0', currencyCode: 'USD' }
+            maxVariantPrice: { amount: '63000.0', currencyCode: 'USD' },
+            minVariantPrice: { amount: '63000.0', currencyCode: 'USD' }
         },
         variants: {
             edges: [
@@ -441,7 +441,7 @@ const mockProducts: ShopifyProduct[] = [
                         selectedOptions: [
                             { name: 'Title', value: 'Default Title' }
                         ],
-                        price: { amount: '45000.0', currencyCode: 'USD' }
+                        price: { amount: '63000.0', currencyCode: 'USD' }
                     }
                 }
             ]
@@ -464,7 +464,7 @@ const mockProducts: ShopifyProduct[] = [
                 }
             ]
         },
-        seo: { title: 'Mac Studio with M3 Ultra chip', description: 'Mac Studio with M3 Ultra chip ($45000)' },
+        seo: { title: 'Mac Studio with M3 Ultra chip', description: 'Mac Studio with M3 Ultra chip ($63000)' },
         tags: ['Desktop', 'Mac', 'M3 Ultra'],
         updatedAt: new Date().toISOString()
     },
@@ -479,8 +479,8 @@ const mockProducts: ShopifyProduct[] = [
             { id: '1', name: 'Title', values: ['Default Title'] }
         ],
         priceRange: {
-            maxVariantPrice: { amount: '45000.0', currencyCode: 'USD' },
-            minVariantPrice: { amount: '45000.0', currencyCode: 'USD' }
+            maxVariantPrice: { amount: '63000.0', currencyCode: 'USD' },
+            minVariantPrice: { amount: '63000.0', currencyCode: 'USD' }
         },
         variants: {
             edges: [
@@ -492,7 +492,7 @@ const mockProducts: ShopifyProduct[] = [
                         selectedOptions: [
                             { name: 'Title', value: 'Default Title' }
                         ],
-                        price: { amount: '45000.0', currencyCode: 'USD' }
+                        price: { amount: '63000.0', currencyCode: 'USD' }
                     }
                 }
             ]
@@ -515,7 +515,7 @@ const mockProducts: ShopifyProduct[] = [
                 }
             ]
         },
-        seo: { title: 'Mac Studio with M3 Ultra chip', description: 'Mac Studio with M3 Ultra chip ($45000)' },
+        seo: { title: 'Mac Studio with M3 Ultra chip', description: 'Mac Studio with M3 Ultra chip ($63000)' },
         tags: ['Desktop', 'Mac', 'M3 Ultra'],
         updatedAt: new Date().toISOString()
     },
@@ -530,8 +530,8 @@ const mockProducts: ShopifyProduct[] = [
             { id: '1', name: 'Title', values: ['Default Title'] }
         ],
         priceRange: {
-            maxVariantPrice: { amount: '45000.0', currencyCode: 'USD' },
-            minVariantPrice: { amount: '45000.0', currencyCode: 'USD' }
+            maxVariantPrice: { amount: '63000.0', currencyCode: 'USD' },
+            minVariantPrice: { amount: '63000.0', currencyCode: 'USD' }
         },
         variants: {
             edges: [
@@ -543,7 +543,7 @@ const mockProducts: ShopifyProduct[] = [
                         selectedOptions: [
                             { name: 'Title', value: 'Default Title' }
                         ],
-                        price: { amount: '45000.0', currencyCode: 'USD' }
+                        price: { amount: '63000.0', currencyCode: 'USD' }
                     }
                 }
             ]
@@ -566,7 +566,7 @@ const mockProducts: ShopifyProduct[] = [
                 }
             ]
         },
-        seo: { title: 'Mac Studio with M3 Ultra chip', description: 'Mac Studio with M3 Ultra chip ($45000)' },
+        seo: { title: 'Mac Studio with M3 Ultra chip', description: 'Mac Studio with M3 Ultra chip ($63000)' },
         tags: ['Desktop', 'Mac', 'M3 Ultra'],
         updatedAt: new Date().toISOString()
     },
@@ -581,8 +581,8 @@ const mockProducts: ShopifyProduct[] = [
             { id: '1', name: 'Title', values: ['Default Title'] }
         ],
         priceRange: {
-            maxVariantPrice: { amount: '45000.0', currencyCode: 'USD' },
-            minVariantPrice: { amount: '45000.0', currencyCode: 'USD' }
+            maxVariantPrice: { amount: '63000.0', currencyCode: 'USD' },
+            minVariantPrice: { amount: '63000.0', currencyCode: 'USD' }
         },
         variants: {
             edges: [
@@ -594,7 +594,7 @@ const mockProducts: ShopifyProduct[] = [
                         selectedOptions: [
                             { name: 'Title', value: 'Default Title' }
                         ],
-                        price: { amount: '45000.0', currencyCode: 'USD' }
+                        price: { amount: '63000.0', currencyCode: 'USD' }
                     }
                 }
             ]
@@ -617,7 +617,7 @@ const mockProducts: ShopifyProduct[] = [
                 }
             ]
         },
-        seo: { title: 'Mac Studio with M3 Ultra chip', description: 'Mac Studio with M3 Ultra chip ($45000)' },
+        seo: { title: 'Mac Studio with M3 Ultra chip', description: 'Mac Studio with M3 Ultra chip ($63000)' },
         tags: ['Desktop', 'Mac', 'M3 Ultra'],
         updatedAt: new Date().toISOString()
     }

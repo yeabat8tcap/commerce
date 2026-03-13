@@ -1,5 +1,4 @@
 import { getCart } from 'lib/local';
-import prisma from 'lib/local/prisma';
 import { NextResponse } from 'next/server';
 import Stripe from 'stripe';
 
@@ -43,17 +42,10 @@ export async function POST(req: Request) {
             mode: 'payment',
             success_url: `${process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3005'}/checkout/success?session_id={CHECKOUT_SESSION_ID}`,
             cancel_url: `${process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3005'}/checkout/cancel`,
+            metadata: {
+                cartId: cart.id!
+            }
         });
-
-        // Deduct inventory locally
-        for (const item of cart.lines) {
-            await prisma.productVariant.update({
-                where: { id: item.merchandise.id },
-                data: {
-                    inventory: { decrement: item.quantity }
-                }
-            });
-        }
 
         return NextResponse.json({ url: session.url });
     } catch (error: any) {

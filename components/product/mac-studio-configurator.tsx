@@ -115,27 +115,6 @@ export function MacStudioConfigurator({ product }: { product: Product }) {
                             <div className="w-full">
                                 <AddToCart product={product} />
                             </div>
-
-                            <div className="flex items-center justify-between mt-6 pt-6 border-t border-gray-200 dark:border-neutral-800">
-                                <div className="flex flex-col">
-                                    <span className="font-semibold text-[13px]">Still deciding?</span>
-                                    <span className="text-[12px] text-gray-500">Save all your configurations for later.</span>
-                                </div>
-                                <div className="flex gap-4">
-                                    <button className="flex items-center gap-1 text-sm text-blue-600 hover:underline">
-                                        <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
-                                        </svg>
-                                        Save
-                                    </button>
-                                    <button className="flex items-center gap-1 text-sm text-blue-600 hover:underline">
-                                        <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
-                                        </svg>
-                                        Share
-                                    </button>
-                                </div>
-                            </div>
                         </div>
 
                     </div>
