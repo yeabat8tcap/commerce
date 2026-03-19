@@ -19,7 +19,6 @@ import OpenCart from "./open-cart";
 
 // CACHE BUSTER: 12345
 
-
 type MerchandiseSearchParams = {
   [key: string]: string;
 };
@@ -157,7 +156,7 @@ export default function CartModal() {
                                       {item.merchandise.product.title}
                                     </span>
                                     {item.merchandise.title !==
-                                      DEFAULT_OPTION ? (
+                                    DEFAULT_OPTION ? (
                                       <p className="text-sm text-neutral-500 dark:text-neutral-400">
                                         {item.merchandise.title}
                                       </p>
@@ -218,7 +217,11 @@ export default function CartModal() {
                       />
                     </div>
                   </div>
-                  <form action={async () => { await redirectToCheckout() }}>
+                  <form
+                    action={async () => {
+                      await redirectToCheckout();
+                    }}
+                  >
                     <CheckoutButton />
                   </form>
                 </div>

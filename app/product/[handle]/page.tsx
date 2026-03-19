@@ -4,8 +4,8 @@ import { Gallery } from "components/product/gallery";
 import { MacStudioConfigurator } from "components/product/mac-studio-configurator";
 import { ProductDescription } from "components/product/product-description";
 import { HIDDEN_PRODUCT_TAG } from "lib/constants";
-import { getProduct, getProductRecommendations } from 'lib/local';
-import type { Image } from 'lib/local/types';
+import { getProduct, getProductRecommendations } from "lib/local";
+import type { Image } from "lib/local/types";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -35,15 +35,15 @@ export async function generateMetadata(props: {
     },
     openGraph: url
       ? {
-        images: [
-          {
-            url,
-            width,
-            height,
-            alt,
-          },
-        ],
-      }
+          images: [
+            {
+              url,
+              width,
+              height,
+              alt,
+            },
+          ],
+        }
       : null,
   };
 }

@@ -2,7 +2,7 @@ import Link from "next/link";
 
 import FooterMenu from "components/layout/footer-menu";
 import LogoSquare from "components/logo-square";
-import { getMenu } from 'lib/local';
+import { getMenu } from "lib/local";
 import { Suspense } from "react";
 
 const { COMPANY_NAME, SITE_NAME } = process.env;
@@ -26,7 +26,9 @@ export default async function Footer() {
             <LogoSquare size="sm" />
             <div className="uppercase">
               <span>{SITE_NAME}</span>
-              <span className="ml-1 text-xs text-neutral-500 lowercase dark:text-neutral-400 font-normal">by</span>
+              <span className="ml-1 text-xs text-neutral-500 lowercase dark:text-neutral-400 font-normal">
+                by
+              </span>
               <span className="ml-1">Cephal LLC</span>
             </div>
           </Link>

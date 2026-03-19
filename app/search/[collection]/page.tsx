@@ -1,4 +1,4 @@
-import { getCollection, getCollectionProducts } from 'lib/local';
+import { getCollection, getCollectionProducts } from "lib/local";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 

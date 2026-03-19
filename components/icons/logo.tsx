@@ -1,6 +1,8 @@
 import clsx from "clsx";
 
-export default function LogoIcon(props: React.ComponentProps<"img"> & { fill?: string }) {
+export default function LogoIcon(
+  props: React.ComponentProps<"img"> & { fill?: string },
+) {
   const { fill, ...imgProps } = props;
   return (
     <img

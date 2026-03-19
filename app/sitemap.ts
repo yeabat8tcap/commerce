@@ -1,4 +1,4 @@
-import { getCollections, getPages, getProducts } from 'lib/local';
+import { getCollections, getPages, getProducts } from "lib/local";
 import { baseUrl, validateEnvironmentVariables } from "lib/utils";
 import { MetadataRoute } from "next";
 

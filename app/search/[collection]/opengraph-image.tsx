@@ -1,5 +1,5 @@
 import OpengraphImage from "components/opengraph-image";
-import { getCollection } from 'lib/local';
+import { getCollection } from "lib/local";
 
 export default async function Image({
   params,

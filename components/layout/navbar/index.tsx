@@ -1,7 +1,7 @@
 import CartModal from "components/cart/modal";
 import LogoSquare from "components/logo-square";
-import { getMenu } from 'lib/local';
-import { Menu } from 'lib/local/types';
+import { getMenu } from "lib/local";
+import { Menu } from "lib/local/types";
 import Link from "next/link";
 import { Suspense } from "react";
 import MobileMenu from "./mobile-menu";
@@ -29,7 +29,9 @@ export async function Navbar() {
             <LogoSquare />
             <div className="ml-2 flex-none text-sm font-medium md:hidden lg:block">
               <span className="uppercase">{SITE_NAME}</span>
-              <span className="ml-1 text-xs text-neutral-500 lowercase dark:text-neutral-400 font-normal">by</span>
+              <span className="ml-1 text-xs text-neutral-500 lowercase dark:text-neutral-400 font-normal">
+                by
+              </span>
               <span className="ml-1 uppercase">Cephal LLC</span>
             </div>
           </Link>

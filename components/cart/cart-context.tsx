@@ -1,11 +1,6 @@
 "use client";
 
-import type {
-  Cart,
-  CartItem,
-  Product,
-  ProductVariant,
-} from 'lib/local/types';
+import type { Cart, CartItem, Product, ProductVariant } from "lib/local/types";
 import React, {
   createContext,
   use,
