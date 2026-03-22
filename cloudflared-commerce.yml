@@ -3,5 +3,5 @@ credentials-file: /Users/8tcap/.cloudflared/df9931ca-acb3-4544-bda7-c5aa5fb0adc4
 
 ingress:
   - hostname: commerce.trycephal.com
-    service: http://localhost:3005
+    service: http://127.0.0.1:3005
   - service: http_status:404

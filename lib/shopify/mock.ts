@@ -2,6 +2,58 @@ import { ShopifyCart, ShopifyCollection, ShopifyProduct } from "./types";
 
 const mockProducts: ShopifyProduct[] = [
   {
+    id: "gid://shopify/Product/13",
+    handle: "dell-pro-max-gb300",
+    availableForSale: true,
+    title: "Dell Pro Max with GB300",
+    description:
+      "NVIDIA Grace 72 Core Neoverse V2. NVIDIA DGX B300 288GB HBM3e and RTX PRO 1000. 496 GB LPDDR5X. 16 TB Gen4 SSD. MaxCool liquid-cooling technology for peak AI workload efficiency. 1600 W Titanium power supply.",
+    descriptionHtml:
+      "<ul><li>NVIDIA Grace 72 Core Neoverse V2</li><li>NVIDIA DGX B300 288GB HBM3e and RTX PRO 1000</li><li>496 GB LPDDR5X</li><li>16 TB Gen4 SSD</li><li>MaxCool liquid-cooling technology</li><li>1600 W Titanium power supply</li></ul>",
+    options: [{ id: "1", name: "Title", values: ["Default Title"] }],
+    priceRange: {
+      maxVariantPrice: { amount: "380000.0", currencyCode: "USD" },
+      minVariantPrice: { amount: "380000.0", currencyCode: "USD" },
+    },
+    variants: {
+      edges: [
+        {
+          node: {
+            id: "gid://shopify/ProductVariant/13",
+            title: "Default Title",
+            availableForSale: true,
+            selectedOptions: [{ name: "Title", value: "Default Title" }],
+            price: { amount: "380000.0", currencyCode: "USD" },
+          },
+        },
+      ],
+    },
+    featuredImage: {
+      url: "/images/dell-pro-max.png",
+      altText: "Dell Pro Max with GB300",
+      width: 1024,
+      height: 1024,
+    },
+    images: {
+      edges: [
+        {
+          node: {
+            url: "/images/dell-pro-max.png",
+            altText: "Dell Pro Max with GB300",
+            width: 1024,
+            height: 1024,
+          },
+        },
+      ],
+    },
+    seo: {
+      title: "Dell Pro Max with GB300",
+      description: "Dell Pro Max with GB300 ($380000)",
+    },
+    tags: ["Desktop", "AI", "NVIDIA GB300", "Computers"],
+    updatedAt: new Date().toISOString(),
+  },
+  {
     id: "gid://shopify/Product/1",
     handle: "mac-studio",
     availableForSale: true,
@@ -56,6 +108,7 @@ const mockProducts: ShopifyProduct[] = [
     tags: ["Desktop", "Mac"],
     updatedAt: new Date().toISOString(),
   },
+
   {
     id: "gid://shopify/Product/2",
     handle: "mac-mini",
@@ -629,58 +682,6 @@ const mockProducts: ShopifyProduct[] = [
       description: "Mac Studio with M3 Ultra chip ($63000)",
     },
     tags: ["Desktop", "Mac", "M3 Ultra"],
-    updatedAt: new Date().toISOString(),
-  },
-  {
-    id: "gid://shopify/Product/13",
-    handle: "dell-pro-max-gb300",
-    availableForSale: true,
-    title: "Dell Pro Max with GB300",
-    description:
-      "NVIDIA Grace 72 Core Neoverse V2. NVIDIA DGX B300 288GB HBM3e and RTX PRO 1000. 496 GB LPDDR5X. 16 TB Gen4 SSD. MaxCool liquid-cooling technology for peak AI workload efficiency. 1600 W Titanium power supply.",
-    descriptionHtml:
-      "<ul><li>NVIDIA Grace 72 Core Neoverse V2</li><li>NVIDIA DGX B300 288GB HBM3e and RTX PRO 1000</li><li>496 GB LPDDR5X</li><li>16 TB Gen4 SSD</li><li>MaxCool liquid-cooling technology</li><li>1600 W Titanium power supply</li></ul>",
-    options: [{ id: "1", name: "Title", values: ["Default Title"] }],
-    priceRange: {
-      maxVariantPrice: { amount: "380000.0", currencyCode: "USD" },
-      minVariantPrice: { amount: "380000.0", currencyCode: "USD" },
-    },
-    variants: {
-      edges: [
-        {
-          node: {
-            id: "gid://shopify/ProductVariant/13",
-            title: "Default Title",
-            availableForSale: true,
-            selectedOptions: [{ name: "Title", value: "Default Title" }],
-            price: { amount: "380000.0", currencyCode: "USD" },
-          },
-        },
-      ],
-    },
-    featuredImage: {
-      url: "/images/dell-pro-max.jpg",
-      altText: "Dell Pro Max with GB300",
-      width: 1024,
-      height: 1024,
-    },
-    images: {
-      edges: [
-        {
-          node: {
-            url: "/images/dell-pro-max.jpg",
-            altText: "Dell Pro Max with GB300",
-            width: 1024,
-            height: 1024,
-          },
-        },
-      ],
-    },
-    seo: {
-      title: "Dell Pro Max with GB300",
-      description: "Dell Pro Max with GB300 ($380000)",
-    },
-    tags: ["Desktop", "AI", "NVIDIA GB300", "Computers"],
     updatedAt: new Date().toISOString(),
   },
 ];

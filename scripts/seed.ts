@@ -16,6 +16,7 @@ async function main() {
 
     const product = await prisma.product.create({
       data: {
+        id: `gid://shopify/Product/1`,
         handle,
         title,
         description:
@@ -46,6 +47,7 @@ async function main() {
         variants: {
           create: [
             {
+              id: `gid://shopify/ProductVariant/3`,
               title: "Default Title",
               selectedOptions: JSON.stringify([
                 { name: "Title", value: "Default Title" },
@@ -65,6 +67,7 @@ async function main() {
 
   const dellProduct = await prisma.product.create({
     data: {
+      id: `gid://shopify/Product/13`,
       handle: dellHandle,
       title: dellTitle,
       description:
@@ -77,14 +80,14 @@ async function main() {
       priceRangeMin: 380000.0,
       priceRangeMax: 380000.0,
       featuredImage: JSON.stringify({
-        url: "/images/dell-pro-max.jpg",
+        url: "/images/dell-pro-max.png",
         altText: "Dell Pro Max with GB300",
         width: 1024,
         height: 1024,
       }),
       images: JSON.stringify([
         {
-          url: "/images/dell-pro-max.jpg",
+          url: "/images/dell-pro-max.png",
           altText: "Dell Pro Max with GB300",
           width: 1024,
           height: 1024,
@@ -98,6 +101,7 @@ async function main() {
       variants: {
         create: [
           {
+            id: `gid://shopify/ProductVariant/13`,
             title: "Default Title",
             selectedOptions: JSON.stringify([
               { name: "Title", value: "Default Title" },
